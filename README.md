@@ -1,24 +1,80 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> The blog app is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-Things you may want to cover:
+## Project screenshots
 
-* Ruby version
+![screenshot()]()
 
-* System dependencies
+Additional description about the project and its features.
 
-* Configuration
+## Built With
 
-* Database creation
+- RUBY on RAILS
+- PostgreSQL
 
-* Database initialization
+## How to Setup
 
-* How to run the test suite
+> You can simply clone or download [this repository](https://github.com/Mithi-code/blog-application), and use your favorite browser or code editor to run this program.
 
-* Services (job queues, cache servers, search engines, etc.)
+- To open the project after download, simply double click the index.html file
 
-* Deployment instructions
+- To open this project using vs code ( for this example) or your favorite code editor, you can follow the guide below:
+  > in your cmd or command line navigate to where this project is located, then;
 
-* ...
+```cmd
+cd Blog_App
+```
+
+> thereafter run
+
+```cmd
+code .
+```
+
+## How to Run the App through terminal
+
+- To run the application through trminal, make sure ruby and IRB is installed in your computer then follow the guide below:
+  > in your cmd or command line navigate to where this project is located, then;
+
+```cmd
+cd blog-application
+```
+
+## Install Gems
+
+
+```cmd
+bundle install
+```
+> thereafter run
+
+```cmd
+.rails s
+```
+
+## Author
+
+👤 **Mithi**
+
+[@githubhandle](https://github.com/Mithi-code/)
+[@twitterhandle](https://twitter.com/sam_mongare)
+[LinkedIn](https://www.linkedin.com/in/mithicode/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse Team for facilitating project requirements and resources
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed
