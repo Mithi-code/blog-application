@@ -23,7 +23,7 @@ Additional description about the project and its features.
   > in your cmd or command line navigate to where this project is located, then;
 
 ```cmd
-cd Blog_App
+cd blog-application
 ```
 
 > thereafter run
