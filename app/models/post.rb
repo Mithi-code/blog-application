@@ -10,6 +10,8 @@ class Post < ApplicationRecord
   end
 
   # Method which returns the 5 most recent comments for a given post.
+  private
+
   def latest_posts
     comments.limit(5).order(created_at: :desc)
   end
