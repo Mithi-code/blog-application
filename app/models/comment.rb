@@ -5,6 +5,7 @@ class Comment < ApplicationRecord
 
   validates :text, presence: true
   # A method that updates the comment counter for a post.
+
   private
 
   def update_comments_counter
