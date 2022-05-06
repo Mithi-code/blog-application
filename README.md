@@ -43,9 +43,23 @@ cd blog-application
 
 ## Install Gems
 
-
 ```cmd
 bundle install
+```
+> then initialize the database
+
+```cmd
+rails db:reset
+```
+Incase its the first time:
+
+```cmd
+rails db:create
+```
+then
+
+```cmd
+rails db:migrate
 ```
 > thereafter run
 

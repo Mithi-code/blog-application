@@ -1,19 +1,16 @@
 <div>
-<%  @user = User.find(params[:user_id]) %>
-  <%= render 'share/user', :user => @user %>
-<% @posts = Post.all %>
-<% @users = User.all %>
-<% if !@posts %>
-  <h4 class="card-title">There are no posts from this user yet<h4>
-<% else %>
+  <%= render 'users/user', :user => @user %>
+  <% @users = User.all %>
 <% @posts.each do |p| %>
-
+<% @comments = p.recent_comments %>
 <% if p.author_id === @user.id %>
-  <%= render 'share/post', :post => p %>
-  <div class="text-center">
-  <a href="/users/<%= @user.id %>/posts/<%= @user.id %>"><button type="button" class="btn btn-primary">Pagination</button></a>
-  </div>
+  <%= render 'post', :post => p %>
+  <%= render 'comment', :user => @users, :comment => @comments, :post => p %>
 <% end %>
 <% end %>
-<% end %>
+<div class = "d-flex flex-row mx-auto " style= "width: 320px; justify-content: space-between">
+<%= link_to "See all posts", user_posts_path(@user.id), 
+class: "list-group-item list-group-item-action list-group-item-success", 
+style: "width: 150px;" %>
+</div>
 </div>
