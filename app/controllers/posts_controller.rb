@@ -20,7 +20,7 @@ class PostsController < ApplicationController
       format.html do
         if @new_post.save
           flash[:notice] = 'Post created successfully.'
-          redirect_to "/users/#{@new_post.author.id}/posts/", notice: 'Success!'
+          redirect_to "/users/#{@new_post.author.id}/posts/"
         else
           flash[:notice] = 'Post creation failed. Try again'
           render :new
