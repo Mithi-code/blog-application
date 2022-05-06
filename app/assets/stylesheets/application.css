@@ -15,7 +15,12 @@
  */
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;;
+  justify-content: center !important;;
+  align-items: center !important;;
+}
+
+a {
+  text-decoration: none !important;;
+  color: #42475d !important;;
 }
