@@ -5,7 +5,7 @@ class Post < ApplicationRecord
   after_save :update_posts_counter
 
   # A method that updates the posts counter for a user.
- def recent_comments
+  def recent_comments
     comments.limit(5).order(created_at: :desc)
   end
 
