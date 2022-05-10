@@ -14,13 +14,6 @@
  *= require_self
  */
 
-.navbar {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-a {
-  text-decoration: none !important;
-  color: red !important;
-}
+ a {
+   text-decoration: none !important;
+ }
