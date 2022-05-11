@@ -46,21 +46,25 @@ cd blog-application
 ```cmd
 bundle install
 ```
+
 > then initialize the database
 
 ```cmd
 rails db:reset
 ```
+
 Incase its the first time:
 
 ```cmd
 rails db:create
 ```
+
 then
 
 ```cmd
 rails db:migrate
 ```
+
 > thereafter run
 
 ```cmd
@@ -74,6 +78,14 @@ rails db:migrate
 [@githubhandle](https://github.com/Mithi-code/)
 [@twitterhandle](https://twitter.com/sam_mongare)
 [LinkedIn](https://www.linkedin.com/in/mithicode/)
+
+## Collabrator
+
+👤 **Atsighi Bright**
+
+- GitHub: [@brytebee](https://github.com/brytebee)
+- Twitter: [@brytebee](https://twitter.com/brytebee)
+- LinkedIn: [brytebee](https://www.linkedin.com/in/brytebee/)
 
 ## 🤝 Contributing
 
