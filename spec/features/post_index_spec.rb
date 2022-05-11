@@ -54,5 +54,20 @@ RSpec.describe 'posts#index', type: :feature do
     it 'can see the first comment on a post' do
       expect(page).to have_content 'Hello Everyone!'
     end
+
+    it 'can see how many comments a post has.' do
+      post = Post.first
+      expect(page).to have_content(post.comments_counter)
+    end
+
+    it 'can see how many likes a post has.' do
+      post = Post.first
+      expect(page).to have_content(post.likes_counter)
+    end
+
+    it "redirects the user to the post's show page after clickin on it" do
+      find('.card-body a', match: :first).click
+      expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
+    end
   end
 end
