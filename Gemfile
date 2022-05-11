@@ -6,6 +6,7 @@ gem 'bootsnap', require: false
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'importmap-rails'
 gem 'jbuilder'
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
 gem 'pg', '~> 1.1'
 gem 'prettier', '~> 2.0'
 gem 'puma', '~> 5.0'
