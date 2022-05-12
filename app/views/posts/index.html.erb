@@ -1,5 +1,5 @@
 <div>
-<%= paginate @users %>
+<%= paginate @posts %>
   <%= render 'users/user', :user => @user %>
   <% @users = User.all %>
 <% @posts.each do |p| %>
@@ -13,4 +13,4 @@
       class: "list-group-item list-group-item-action list-group-item-success mx-auto", 
       style: "width: 150px;" %>
 </div>
-<%= paginate @users %>
+<%= paginate @posts %>
