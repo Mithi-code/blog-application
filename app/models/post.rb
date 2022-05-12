@@ -1,5 +1,4 @@
 class Post < ApplicationRecord
-  perginate_per 5
   belongs_to :author, class_name: 'User'
   has_many :comments
   has_many :likes

@@ -65,6 +65,11 @@ RSpec.describe 'posts#index', type: :feature do
       expect(page).to have_content(post.likes_counter)
     end
 
+    it 'I can see a section for pagination if there are more posts than fit on the view.' do
+      click_link('Pagination')
+      expect(page).to have_content('My Blog')
+    end
+
     it "redirects the user to the post's show page after clickin on it" do
       find('.card-body a', match: :first).click
       expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
