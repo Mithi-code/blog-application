@@ -4,7 +4,7 @@
 
 ## Project screenshots
 
-![screenshot(Test-screenshoot)](./test.png)
+![screenshot(Test-screenshoot)](./test.jpeg)
 
 Additional description about the project and its features.
 
