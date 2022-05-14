@@ -74,6 +74,7 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'rswag'
 gem 'devise'
 gem 'jwt'
 gem 'rubocop', '>= 1.0', '< 2.0'
