@@ -1,0 +1,15 @@
+<div>
+<h3 class='hello_error'><%= flash[:success] %></h3>
+<% @comments = Comment.all %>
+<% @users = User.all %>
+<%= render 'post_show', :post => @post, :user => @users %>
+<%= render 'comment', :user => @users, :comment => @comments, :post => @post %>
+</div>
+<div class="list-unstyled col-md-8">
+<div class="card-body" style = "padding-left: 0; margin-left: 14.5%">
+<%= render partial: "add_comments", local: { post: @post } %>
+<%= form_with url: "/users/#{@post.author_id}/posts/#{@post.id}/likes", scope: :like do |form| %>
+  <%= form.submit "Like ", class: "btn btn-primary mt-3"%>  
+<% end %>
+</div>
+</div>
